@@ -7,21 +7,21 @@
     <link rel="stylesheet" style.css href="style.css"/>
 </head>
 <body>
-    <header class="header">Etch a Sketch</header>
-    <div class="content">
-        <div class="btnsDirec">
-            <input type="color" class="button" id="colorwheel">
-            <button class="btnsCustom" id="singleMode">Single Mode</button>
-            <button class="btnsCustom" id="rainbow">rainbow mode</button>
-            <button class="btnsCustom" id="eraser">eraser</button>
-            <button class="btnsCustom" id="clear">clear</button>
-            <input type="range" min="2" max="64" id="gridSize">
-        </div>
-        <div id="gridBoard" class="board" style="grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);">
-        </div>
+    <div class="mainBox">
+        <header class="header">Etch a Sketch</header>
+        <div class="content">
+            <div class="btnsDirec">
+                <input type="color" class="button" id="colorwheel">
+                <button class="btnsCustom" id="singleMode">Single Mode</button>
+                <button class="btnsCustom" id="rainbow">Rainbow mode</button>
+                <button class="btnsCustom" id="eraser">Eraser</button>
+                <button class="btnsCustom" id="clear">Clear</button>
+                <div class="" id="rangeNumber">0X0</div>
+                <input type="range" min="2" max="64" id="gridSize">
+            </div>
+            <div id="gridBoard" class="board" style="grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);"></div>
         </div>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
